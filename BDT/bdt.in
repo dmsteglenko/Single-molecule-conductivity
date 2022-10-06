@@ -1,0 +1,26 @@
+# This is simple test inputs file
+# Ok lets go
+
+ orb_window = 12
+
+
+ INPUT_FILE_COMPLEX = bdt-2au7_sp_16.log 
+
+ INPUT_FILE_ISOLATED = bdt_sp_16.log
+
+ HOMO_RES = 5.45
+
+ SN_1=11
+
+ SN_N=12
+
+ N_PTS=51
+ 
+ U_UPR = 9
+
+ deg_thrh=0.08
+ integrator=0
+ 
+
+
+ 

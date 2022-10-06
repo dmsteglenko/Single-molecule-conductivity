@@ -1,0 +1,36 @@
+\documentclass{article}
+\usepackage[paperwidth=8.25cm, paperheight=6.0cm,
+top=0.0cm, bottom=0cm, left=0cm, right=0cm]{geometry}
+\usepackage{tikz,pgfplots}
+\usepgfplotslibrary{fillbetween}
+
+\begin{document}
+\begin{figure}
+\pgfplotsset{width=8.25cm, height=6.0cm, compat=newest,
+legend image code/.code={\draw [#1, thick] (0cm,0cm)--(0.25cm,0cm); }, every tick/.style={line width=0.25pt},
+}
+
+\begin{tikzpicture}
+\begin{axis} [width=7.5cm, height=6.2cm, ticklabel style = {font= \small}, xlabel={$Voltage,\: V$}, ylabel={$Transition\: probability$},
+legend entries={$\alpha\:channel$, $\beta\:channel$}, legend style={font=\small, nodes={scale=0.95, transform shape}}, legend pos=north east,
+legend style={at={(0.95,0.95)}},
+xmin=0.0, xmax=5.0,
+ymin=-1e-02, ymax=1.3e-01,
+minor x tick num=4,
+xtick distance=1.0,
+minor y tick num=4,
+ytick distance=3.0e-2,
+grid = major
+]
+
+
+\addplot [blue] table [ x expr=\thisrowno{0}, y expr=(\thisrowno{3})] {h-cu-h.vi-alfa};
+\addplot [red] table [ x expr=\thisrowno{0}, y expr=(\thisrowno{3})] {h-cu-h.vi-beta};
+
+
+
+\end{axis}
+\end{tikzpicture}
+ 
+\end{figure}
+\end{document}

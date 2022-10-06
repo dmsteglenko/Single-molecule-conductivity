@@ -1,0 +1,25 @@
+# This is simple test inputs file
+# Ok lets go
+
+ orb_window = 10
+
+ INPUT_FILE_COMPLEX = H-Cu-H_sp-complex_09.log 
+
+ INPUT_FILE_ISOLATED = H-Cu-H_sp-isolated-09.log
+
+ HOMO_RES = 5.654
+
+ SN_1=16
+
+ SN_N=32
+
+ N_PTS=51
+ 
+ U_UPR = 10
+
+ #deg_thrh=0.85
+ 
+ wf = uhf
+
+
+ 
